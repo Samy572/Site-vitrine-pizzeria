@@ -1,0 +1,15 @@
+#rating{
+  height: 110px;
+  width: 100%;
+  ul{
+    height: 100%;
+    width: 100%;
+    @include d-flex-center;
+    justify-content: space-around;
+  }
+  img{
+    height: 50px;
+    width: 100px;
+    filter: grayscale(100%);
+  }
+}

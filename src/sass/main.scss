@@ -3,6 +3,8 @@
 @import './utils/mixin.scss';
 @import '../sass/layouts/header.scss';
 @import '../sass/components/slider.scss';
+@import '../sass/layouts/horaires.scss';
+@import '../sass/layouts/rating.scss'; 
 
 .container-description {
 	padding: 50px 30px;
@@ -48,7 +50,7 @@
 	max-width: 500px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+
 	grid-gap: 5px;
 	.img-1,
 	.img-2 {

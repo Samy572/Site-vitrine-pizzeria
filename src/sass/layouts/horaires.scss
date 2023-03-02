@@ -1,0 +1,48 @@
+.container-horaires {
+  margin-top: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 100%;
+	background-size: 100%;
+	img {
+		height: 400px;
+		width: 100%;
+		filter: brightness(40%);
+	}
+}
+
+.container-horaires ul {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	color: white;
+	li {
+		text-align: center;
+		width: 100%;
+		padding: 8px 0;
+		line-height: 20px;
+		border-bottom: dotted 2px $light;
+	}
+}
+
+.container-horaires h3 {
+  letter-spacing: 5px;
+	position: absolute;
+	color: $light;
+	top: 18%;
+	font-weight: bold;
+}
+
+.container-horaires button {
+  font-size: 14px;
+	position: absolute;
+	bottom: 18%;
+	@include button(transparent, 10px 20px);
+	color: $light;
+}
