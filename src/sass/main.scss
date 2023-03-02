@@ -1,0 +1,57 @@
+@import './base/reset.scss';
+@import './utils/variables.scss';
+@import './utils/mixin.scss';
+@import '../sass/layouts/header.scss';
+@import '../sass/components/slider.scss';
+
+.container-description {
+	padding: 50px 30px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 500px;
+	h2 {
+		font-weight: 500;
+		font-family: $fontTitle;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 14px;
+		margin-bottom: 15px;
+		font-family: $textFont;
+		color: $medium;
+		line-height: 25px;
+	}
+}
+
+.container-btn {
+	width: 100%;
+	margin-top: 30px;
+	@include d-flex-center;
+	justify-content: center;
+	button {
+		@include button(white, 10px 15px);
+		border: solid 1px $medium;
+		color: $medium;
+
+		&:hover {
+			background-color: $gray-dark;
+			color: $light;
+		}
+	}
+}
+
+.container-img {
+	padding: 40px 10px;
+	max-width: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 5px;
+	.img-1,
+	.img-2 {
+		margin-bottom: 5px;
+	}
+}

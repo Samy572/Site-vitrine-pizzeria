@@ -1,0 +1,11 @@
+@mixin d-flex-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin menu-burger {
+	content: '';
+	position: absolute;
+	height: 3px;
+	background-color: $light;
+}
