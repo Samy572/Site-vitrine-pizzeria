@@ -1,0 +1,80 @@
+.container-horaires-menus-galeries {
+	margin-top: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 100%;
+	background-size: 100%;
+	img {
+		height: 400px;
+		width: 100%;
+		filter: brightness(40%);
+	}
+}
+
+.container-horaires-menus-galeries ul {
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	color: white;
+	li {
+		font-weight: bold;
+		font-size: 18px;
+		text-align: center;
+		width: 100%;
+		padding: 8px 0;
+		line-height: 25px;
+		border-bottom: dotted 2px $light;
+	}
+}
+
+.container-horaires-menus-galeries h3 {
+	letter-spacing: 5px;
+	position: absolute;
+	color: $light;
+	top: 8%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.container-horaires-menus-galeries button {
+	font-size: 14px;
+	position: absolute;
+	bottom: 12%;
+	@include button(transparent, 10px 20px);
+	color: $light;
+}
+
+.plats::before {
+	@include icon('\f805');
+}
+.pizzas:before {
+	@include icon('\f818');
+}
+.desserts:before {
+	@include icon('\f810');
+}
+.cocktails:before {
+	@include icon('\f561');
+}
+.soiree:before {
+	@include icon('\f1fd');
+}
+.lieu::before {
+	@include icon('\f041');
+}
+
+#bg-carte-menus {
+	position: relative;
+	background: url('/src/asset/images/pizza-disco.jpg');
+	background-position: center;
+}
+
+#bg-carte-menus::before {
+@include background-black
+}

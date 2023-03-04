@@ -47,12 +47,11 @@
 		display: flex;
 		justify-content: center;
 		li {
+			font-family: $fontTitle;
 			list-style: circle;
 			margin: 0 20px;
 			padding-bottom: 20px;
-			h2 {
-				font-family: $fontTitle;
-			}
+			font-size: 18px;
 		}
 	}
 }
@@ -66,6 +65,7 @@
 	p {
 		text-align: center;
 		font-size: 18px;
+		line-height: 25px;
 	}
 }
 
@@ -73,8 +73,8 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 40px;
-	a{
-		color:$light;
+	a {
+		color: $light;
 		font-size: 16px;
 	}
 }
@@ -85,7 +85,6 @@
 	color: $light;
 	margin: 0 10px;
 	&:hover {
-	background-color: $gray-dark;
-}
-
+		background-color: $gray-dark;
+	}
 }

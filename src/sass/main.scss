@@ -3,8 +3,13 @@
 @import './utils/mixin.scss';
 @import '../sass/layouts/header.scss';
 @import '../sass/components/slider.scss';
-@import '../sass/layouts/horaires.scss';
-@import '../sass/layouts/rating.scss'; 
+@import '../sass/layouts/horaires-menus.scss';
+@import '../sass/layouts/rating.scss';
+@import '../sass/layouts/footer.scss';
+
+body {
+	font-family: $textFont;
+}
 
 .container-description {
 	padding: 50px 30px;
@@ -12,7 +17,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 500px;
+	width: 100%;
 	h2 {
 		font-weight: 500;
 		font-family: $fontTitle;
@@ -47,7 +52,7 @@
 
 .container-img {
 	padding: 40px 10px;
-	max-width: 500px;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
@@ -56,4 +61,28 @@
 	.img-2 {
 		margin-bottom: 5px;
 	}
+}
+.avis {
+	@include button(white, 10px 15px);
+	border: solid 1px black;
+}
+
+.container-btn-avis {
+	height: 80px;
+	width: 100%;
+	@include d-flex-center;
+	justify-content: center;
+	flex-direction: column;
+	p {
+		padding: 10px 0;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#brasserie {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 0 10%;
+	}
+	
 }

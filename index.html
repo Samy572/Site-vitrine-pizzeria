@@ -4,8 +4,15 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite App</title>
+		<title>Brasserie Olé</title>
 	</head>
 	<body>
 		<header>
@@ -26,6 +33,7 @@
 		</header>
 
 		<div class="hide">
+			<button id="close">X</button>
 			<ul class="menu-list">
 				<li>Accueil</li>
 				<li>Carte et Menus</li>
@@ -41,9 +49,9 @@
 					<li>Italien</li>
 					<li>Pizzeria</li>
 				</ul>
-				<h1>Brasserie Sale & Pépé</h1>
+				<h1>Brasserie Olé & Dédé</h1>
 				<p>
-					La Brasserie Sale & Pépé est un restaurant de spécialités<br />
+					La Brasserie Sale & Dédé est un restaurant de spécialités<br />
 					Italiennes.
 				</p>
 				<p>Au menu: Pizzas, Pâtes, Burgers.</p>
@@ -61,9 +69,9 @@
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
 		</div>
-		<section>
+		<section id="brasserie" >
 			<div class="container-description">
-				<h2>BRASSERIE SALE & PÉPÉ</h2>
+				<h2>BRASSERIE Olé & Dédé</h2>
 				<p>Idéalement située à Rezé, à quelques pas de l’arrêt de tram Pont-Rousseau et de l’hôpital privé du Confluent (Nouvelles cliniques).</p>
 				<p>
 					En <strong>terrasse</strong> ou en <strong>intérieur</strong>, venez vous installer et profiter de cette brasserie sympathique que vous
@@ -93,7 +101,7 @@
 		</section>
 
 		<section id="horaires">
-			<div class="container-horaires">
+			<div class="container-horaires-menus-galeries">
 				<img src="./src/asset/images/party-group-of-people.jpg" alt="" />
 				<h3>Les Horaires</h3>
 
@@ -134,6 +142,50 @@
 				</li>
 			</ul>
 		</section>
+		<section class="carte-menus">
+			<div class="container-horaires-menus-galeries">
+				<img src="./src/asset/images/sale-pepe-pizza-menus-1.jpg" alt="" />
+				<h3>Carte et Menus</h3>
+
+				<ul>
+					<li class="plats">Les plats</li>
+					<li class="pizzas">Les pizzas</li>
+					<li class="desserts">Les desserts</li>
+					<li class="cocktails">Les cocktails</li>
+				</ul>
+
+				<button>CARTE ET MENUS</button>
+			</div>
+		</section>
+		<div class="container-btn-avis">
+			<p>Évaluation Google: 4.7 sur 5,Basée sur 219 avis</p>
+			<button class="avis">VOTRE AVIS NOUS INTERÉSSE</button>
+		</div>
+
+		<section class="carte-menus">
+			<div id="bg-carte-menus" class="container-horaires-menus-galeries">
+				<h3>Galerie Photos</h3>
+
+				<ul>
+					<li class="lieu">Du lieu</li>
+					<li class="plats">Des plats</li>
+					<li class="cocktails">Des cocktails</li>
+					<li class="soiree">Des soirées à thèmes</li>
+				</ul>
+
+				<button>GALERIE</button>
+			</div>
+		</section>
+		<footer>
+			<div class="container-footer-social">
+				<div class="fb-footer"><img src="/src/asset/icons/fb.svg" alt="facebook" /></div>
+
+				<div class="insta-footer"><img src="/src/asset/icons/insta.svg" alt="instagram" /></div>
+
+				<div class="google-footer"><img src="/src/asset/icons/google.svg" alt="google" /></div>
+			</div>
+			<p class="mentions">Mentions legales</p>
+		</footer>
 
 		<script type="module" src="/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>

@@ -1,0 +1,55 @@
+@import '../utils/mixin.scss';
+
+footer {
+	position: relative;
+	margin-top: 50px;
+	height: 350px;
+	width: 100%;
+	background: url('/src/asset/images/hotel-diner-dining.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+  
+	.container-footer-social {
+		height: 100%;
+		@include d-flex-center;
+		justify-content: center;
+	}
+}
+
+footer::before{
+  @include background-black;
+}
+
+.fb-footer,
+.insta-footer,
+.google-footer {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	background-color: white;
+	@include d-flex-center;
+	align-items: center;
+	border-radius: 50%;
+  cursor: pointer;
+}
+
+footer img {
+	height: 40px;
+	width: 40px;
+	filter: invert(100%);
+}
+.insta-footer {
+	margin: 0 15px;
+}
+.google-footer img {
+	filter: invert(0);
+}
+
+.mentions {
+	color: $light;
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
