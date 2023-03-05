@@ -84,5 +84,15 @@ body {
 		grid-template-columns: 1fr 1fr;
 		padding: 0 10%;
 	}
-	
+	.container-horaires-menus-galeries {
+		height: 750px;
+
+		img {
+			height: 750px;
+			background-attachment: fixed;
+		}
+		h3 {
+			font-size: 40px;
+		}
+	}
 }
