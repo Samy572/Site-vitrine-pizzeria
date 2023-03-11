@@ -2,22 +2,21 @@
 
 footer {
 	position: relative;
-	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	height: 350px;
 	width: 100%;
-	background: url('/src/asset/images/hotel-diner-dining.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-  
+	background-color: black;
+	// background: url('/src/asset/images/hotel-diner-dining.jpg');
+	// background-position: center;
+	// background-repeat: no-repeat;
+
 	.container-footer-social {
 		height: 100%;
 		@include d-flex-center;
 		justify-content: center;
 	}
-}
-
-footer::before{
-  @include background-black;
 }
 
 .fb-footer,
@@ -26,23 +25,27 @@ footer::before{
 	height: 40px;
 	width: 40px;
 	padding: 10px;
-	background-color: white;
+	background-color: rgb(0, 0, 0);
 	@include d-flex-center;
 	align-items: center;
 	border-radius: 50%;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 footer img {
 	height: 40px;
 	width: 40px;
-	filter: invert(100%);
+	filter: invert(0%);
+	transition: transform 0.3s ease;
+	&:hover{
+		transform:scale(1.2);
+	}
 }
 .insta-footer {
 	margin: 0 15px;
 }
 .google-footer img {
-	filter: invert(0);
+	filter: invert(100%);
 }
 
 .mentions {
@@ -52,4 +55,3 @@ footer img {
 	left: 50%;
 	transform: translateX(-50%);
 }
-

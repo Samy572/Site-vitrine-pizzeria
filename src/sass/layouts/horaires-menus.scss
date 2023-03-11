@@ -1,5 +1,4 @@
 .container-horaires-menus-galeries {
-	margin-top: 20px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -76,5 +75,5 @@
 }
 
 #bg-carte-menus::before {
-@include background-black
+	@include background-black;
 }

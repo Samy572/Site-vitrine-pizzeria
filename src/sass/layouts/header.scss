@@ -65,7 +65,7 @@ li a img {
 	width: 100%;
 	button {
 		position: absolute;
-		font-size: 20px;
+		font-size: 25px;
 		width: 30px;
 		height: 30px;
 		right: 10%;
@@ -74,6 +74,7 @@ li a img {
 		border: none;
 		background: $light;
 		cursor: pointer;
+		transform: rotate(45deg);
 	}
 }
 

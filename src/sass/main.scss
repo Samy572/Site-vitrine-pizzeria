@@ -39,7 +39,7 @@ body {
 	margin-top: 30px;
 	@include d-flex-center;
 	justify-content: center;
-	button {
+	.commande {
 		@include button(white, 10px 15px);
 		border: solid 1px $medium;
 		color: $medium;
@@ -56,26 +56,34 @@ body {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-
 	grid-gap: 5px;
+
 	.img-1,
 	.img-2 {
 		margin-bottom: 5px;
 	}
 }
-.avis {
-	@include button(white, 10px 15px);
-	border: solid 1px black;
-}
 
 .container-btn-avis {
-	height: 80px;
+	color: $light;
+	padding: 20px 0;
+	margin: 0;
 	width: 100%;
+	display: flex;
+	flex-grow: 1;
+	background: #000000;
 	@include d-flex-center;
 	justify-content: center;
 	flex-direction: column;
 	p {
-		padding: 10px 0;
+		padding: 20px 0;
+	}
+	.btn-interet {
+		@include d-flex-center;
+		justify-content: center;
+		@include button(white, 10px 15px);
+		border: solid 1px $medium;
+		color: $medium;
 	}
 }
 
