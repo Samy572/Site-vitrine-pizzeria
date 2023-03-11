@@ -1,6 +1,6 @@
 import './src/sass/main.scss';
 import './slider';
-
+const link = document.querySelectorAll('.link-menu');
 const menu = document.querySelector('.menu');
 const hide = document.querySelector('.hide');
 const body = document.querySelector('body');
@@ -9,13 +9,7 @@ let toggle = false;
 
 menu.addEventListener('click', function () {
 	toggle = !toggle;
-	if (toggle === true) {
-		hide.style.display = 'flex';
-		body.style.overflow = 'hidden';
-	} else if (toggle === false) {
-		hide.style.display = 'none';
-		body.style.overflow = 'auto';
-	}
+	inverse();
 });
 
 closeBtn.addEventListener('click', function () {
@@ -25,3 +19,23 @@ closeBtn.addEventListener('click', function () {
 		body.style.overflow = 'auto';
 	}
 });
+
+link.forEach((el) => {
+	el.addEventListener('click', function () {
+		if (toggle === true) {
+			console.log(toggle)
+			toggle = !toggle;
+			inverse();
+		}
+	});
+});
+
+function inverse() {
+	if (toggle === true) {
+		hide.style.display = 'flex';
+		body.style.overflow = 'hidden';
+	} else {
+		hide.style.display = 'none';
+		body.style.overflow = 'auto';
+	}
+}
